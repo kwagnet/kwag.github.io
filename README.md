@@ -1,2 +1,2 @@
 # kwag.github.io
-KWAG Blog
+KWAG Homepage
