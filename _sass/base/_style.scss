@@ -1217,3 +1217,17 @@ and Blueprint http://www.blueprintcss.org/
         padding: 0 10px;
     }
 }
+
+.site-content-book {
+    position: relative;
+}
+
+.sidebar-book {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.content-book {
+    margin-left: 200px;
+}
