@@ -162,6 +162,7 @@ and Blueprint http://www.blueprintcss.org/
  a:hover {
      color: #f0f;
      transition: color .15s ease-in-out;
+     text-decoration: underline;
  }
  
  /* Text elements */
@@ -1218,16 +1219,42 @@ and Blueprint http://www.blueprintcss.org/
     }
 }
 
+// sidebar
 .site-content-book {
     position: relative;
 }
 
 .sidebar-book {
-    position: fixed;
-    top: 0;
-    left: 0;
+    font-size: 13px;
+
+    ol {
+        margin-bottom: 20px;
+    }
 }
 
 .content-book {
-    margin-left: 200px;
+
+    .entry-header {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .sidebar-book {
+        float: left;
+        width: 200px;
+    
+        ol {
+            margin-bottom: 20px;
+        }
+    }
+    
+    .content-book {
+        float: right;
+        width: 70%;
+    
+        .entry-header {
+            margin-bottom: 40px;
+        }
+    }
 }
